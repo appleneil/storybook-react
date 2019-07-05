@@ -1,0 +1,12 @@
+.cart {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 7px 0 rgba(150, 142, 140, 0.35);
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    padding: 24px;
+    &-attention {
+        font-style: italic;
+        margin: 0 0 16px;
+    }
+}

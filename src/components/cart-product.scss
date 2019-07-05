@@ -1,0 +1,19 @@
+.cart-product {
+    color: #000;
+    padding: 0 0 32px;
+    &-label {
+        font-family: 'Roboto Slab', serif;
+        font-size: 24px;
+    }
+    &-price {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 16px 0 0;
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
