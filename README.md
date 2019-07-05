@@ -3,11 +3,9 @@
 In this repository:
 
 - `src`: the react components and stylesheets
-- `stories`: the list of stories representing components in different states
+- `components`: the different components, their scss files and their stories
 
-This project use the tool `Storybook`: https://storybook.js.org/
-
-Please see the relative documentation for more explanations: https://storybook.js.org/docs/basics/introduction/
+This project uses the tool `Storybook`: https://storybook.js.org/
 
 ## Prerequisites
 
@@ -16,6 +14,6 @@ Please see the relative documentation for more explanations: https://storybook.j
 ## Install
 
 After cloning the project, run the following commands in the project directory:
-- `npm install`, in order to install node dependencies
-- `npm run storybook`, in order to start the project, this will open up a tab in your navigator
+- `yarn install`, in order to install node dependencies
+- `yarn run storybook`, in order to start the project, this will open up a tab in your navigator
 
