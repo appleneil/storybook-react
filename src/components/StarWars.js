@@ -62,7 +62,7 @@ class StarWars extends React.Component {
                                 sortedFilms.map(film => {
                                     return (
                                         <li className="star-wars-film" key={film.episode_id}>
-                                            <span className="year">{new Date(film.release_date).toLocaleDateString().substr(6, 11)}</span> - {film.title}
+                                            <span className="year">{new Date(film.release_date).getFullYear()}</span> - {film.title}
                                         </li>
                                     )
                                 })
