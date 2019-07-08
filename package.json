@@ -27,5 +27,6 @@
     "react": "^16.8.6",
     "react-jss": "^8.6.1",
     "sass-loader": "^7.1.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -17,3 +17,5 @@ export const actions = {
 storiesOf('Button', module)
     .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
     .add('default', () => <Button label={button.label} classes={button.classes} />)
+    .add('orange', () => <Button label={button.label} classes={`${button.classes} btn-orange`} />)
+    .add('disabled', () => <Button label={button.label} classes={button.classes} disabled={true} />)
