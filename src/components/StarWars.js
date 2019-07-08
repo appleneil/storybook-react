@@ -15,15 +15,16 @@ class StarWars extends React.Component {
 
     componentDidMount() {
         if (this.props.dataUrl && !this.props.isEmpty) {
-            this.fetchData();
-            this.setState({
-                isLoading: false
-            })
+            this.fetchData().then(() => {
+                this.setState({
+                    isLoading: false
+                })
+            });
         }
     }
 
     fetchData() {
-        fetch('https://swapi.co/api/people/1/?format=json')
+        return fetch('https://swapi.co/api/people/1/?format=json')
             .then(response => response.json())
             .then(character => {
                 this.setState({
@@ -52,7 +53,7 @@ class StarWars extends React.Component {
         return (
             <div className={`star-wars ${isLoading ? 'is-loading' : ''}`}>
                 {
-                    (!isLoading && characterName && films) &&
+                    (!isLoading && characterName && sortedFilms) &&
                     <div>
                         <h1 className="star-wars-character">
                             {characterName}

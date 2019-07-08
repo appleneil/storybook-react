@@ -29,6 +29,7 @@
         height: 50px;
         opacity: 0;
         position: absolute;
+        transition-delay: 0.2s;
         visibility: hidden;
         width: 50px;
         &:before, &:after {
@@ -48,6 +49,7 @@
     }
     &.is-loading .loader {
         opacity: 1;
+        transition: opacity 0.3s linear, visibility 0.3s linear;
         visibility: visible;
         z-index: 1;
     }
